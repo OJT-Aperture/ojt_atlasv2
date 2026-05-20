@@ -1,0 +1,1 @@
+export { ModuleSchermModule } from "./ModuleSchermModule";

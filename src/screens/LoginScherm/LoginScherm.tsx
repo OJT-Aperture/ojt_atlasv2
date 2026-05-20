@@ -51,7 +51,9 @@ export const LoginScherm = (): JSX.Element => {
               value={selectedSchool}
               onChange={(event) => setSelectedSchool(event.target.value)}
               aria-label="Schoolnaam"
-              className="absolute top-0 left-0 z-10 w-[633px] h-[58px] rounded border border-transparent pl-[82px] pr-12 [font-family:'Poppins',Helvetica] font-normal text-xl tracking-[-0.44px] leading-[30px] text-[#434343]"
+              className={`absolute top-0 left-0 z-10 w-[633px] h-[58px] rounded border border-transparent pl-[82px] pr-12 [font-family:'Poppins',Helvetica] font-normal text-xl tracking-[-0.44px] leading-[30px] ${
+                selectedSchool ? "text-[#434343]" : "text-transparent"
+              }`}
             >
               {schoolOptions.map((option) => (
                 <option
@@ -59,6 +61,7 @@ export const LoginScherm = (): JSX.Element => {
                   value={option.value}
                   disabled={option.value === ""}
                   hidden={option.value === ""}
+                  style={{ color: option.value ? "#434343" : "transparent" }}
                 >
                   {option.label}
                 </option>
@@ -137,7 +140,7 @@ export const LoginScherm = (): JSX.Element => {
           <div className="absolute top-[558px] left-[259px] w-[343px] h-[23px] flex">
             <p className="flex items-center justify-center w-[341px] h-[23px] [font-family:'Poppins',Helvetica] font-medium text-transparent text-base text-center tracking-[-0.35px] leading-6 whitespace-nowrap">
               <span className="text-[#81818199] tracking-[-0.06px]">
-                Geen account?{" "}
+                Geen account?{' '}
               </span>
               <a
                 href="#registreren"

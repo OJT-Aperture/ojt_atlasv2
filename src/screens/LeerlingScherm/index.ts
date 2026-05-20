@@ -1,0 +1,1 @@
+export { LeerlingScherm } from "./LeerlingScherm";

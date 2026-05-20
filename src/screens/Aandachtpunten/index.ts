@@ -1,0 +1,1 @@
+export { Aandachtpunten } from "./Aandachtpunten";
