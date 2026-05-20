@@ -1,4 +1,22 @@
 {
-  "nodes": [],
+  "nodes": [
+    {
+      "id": "src/screens/BasisLayout/BasisLayout.tsx",
+      "label": "BasisLayout",
+      "routes": [
+        "/"
+      ],
+      "dataModelId": "1573:8565",
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/LoginScherm/LoginScherm.tsx",
+      "label": "LoginScherm",
+      "routes": [
+        "/login"
+      ],
+      "dataModelId": "1626:9280"
+    }
+  ],
   "edges": []
 }
