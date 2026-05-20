@@ -136,17 +136,16 @@ export const BasisLayout = (): JSX.Element => {
           src="/img/line-101.svg"
         />
         <form
-          className="relative w-[534px] h-[40.46px] shadow-[0px_4px_4px_#00000033]"
+          className="relative w-[534px] h-10 bg-[#ededed] rounded-[20px] shadow-[0px_4px_4px_#00000033]"
           role="search"
         >
           <label htmlFor="basis-layout-search" className="sr-only">
             Zoeken naar klas, leerling, module
           </label>
-          <div className="absolute top-0 left-0 w-[532px] h-10 bg-[#ededed] rounded-[20px]" />
           <input
             id="basis-layout-search"
             type="search"
-            className="absolute top-0 left-0 w-[532px] h-10 rounded-[20px] pl-[17px] pr-[56px] [font-family:'Poppins',Helvetica] font-normal text-sm tracking-[-0.31px] leading-[21px] text-black placeholder:text-[#00000066]"
+            className="w-full h-full rounded-[20px] bg-transparent pl-[17px] pr-[56px] [font-family:'Poppins',Helvetica] font-normal text-sm tracking-[-0.31px] leading-[21px] text-black placeholder:text-[#00000066]"
             placeholder="Zoeken naar klas, leerling, module..."
             aria-label="Zoeken naar klas, leerling, module"
           />
@@ -227,7 +226,7 @@ export const BasisLayout = (): JSX.Element => {
         className="fixed top-0 left-0 w-[212px] h-[1024px] rounded-[0px_20px_20px_0px] shadow-[0px_4px_4px_#00000040]"
         aria-label="Zijbalk navigatie"
       >
-        <div className="absolute top-0 left-0 w-[206px] h-[1024px] bg-[#e0ffdb] rounded-[0px_20px_20px_0px]" />
+        <div className="absolute top-0 left-0 w-full h-[1024px] bg-[#e0ffdb] rounded-[0px_20px_20px_0px]" />
         <div className="absolute top-[18px] left-4 w-44 h-[761px] flex flex-col gap-[61.8px]">
           <div className="-ml-0.5 h-[206.23px] relative">
             <img
