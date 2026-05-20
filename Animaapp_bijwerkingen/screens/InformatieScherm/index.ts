@@ -1,0 +1,1 @@
+export { InformatieScherm } from "./InformatieScherm";

@@ -1,0 +1,1 @@
+export { InstellingenScherm } from "./InstellingenScherm";
