@@ -10,6 +10,7 @@ import { LeerlingSchermScreen } from "./screens/LeerlingSchermScreen";
 import { ModuleScherm } from "./screens/ModuleScherm";
 import { ModuleSchermModule } from "./screens/ModuleSchermModule";
 import { UltimateClassroom } from "./screens/UltimateClassroom";
+import { TMeting } from "./screens/TMeting";
 
 export const router = createBrowserRouter([
   {
@@ -55,5 +56,9 @@ export const router = createBrowserRouter([
   {
     path: "/ultimate-classroom",
     element: <UltimateClassroom />,
+  },
+  {
+    path: "/tmeting",
+    element: <TMeting />,
   },
 ]);
