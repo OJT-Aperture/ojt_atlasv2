@@ -16,7 +16,288 @@
         "/login"
       ],
       "dataModelId": "1626:9280"
+    },
+    {
+      "id": "src/screens/Aandachtpunten/Aandachtpunten.tsx",
+      "label": "Aandachtpunten",
+      "routes": [
+        "/aandachtpunten"
+      ],
+      "dataModelId": "630:1161"
+    },
+    {
+      "id": "src/screens/HelpEnSupport/HelpEnSupport.tsx",
+      "label": "HelpEnSupport",
+      "routes": [
+        "/help-en-support"
+      ],
+      "dataModelId": "491:15"
+    },
+    {
+      "id": "src/screens/Klassen/Klassen.tsx",
+      "label": "Klassen",
+      "routes": [
+        "/klassen"
+      ],
+      "dataModelId": "1645:3682"
+    },
+    {
+      "id": "src/screens/KlassenInformatie/KlassenInformatie.tsx",
+      "label": "KlassenInformatie",
+      "routes": [
+        "/klassen-informatie"
+      ],
+      "dataModelId": "825:1685"
+    },
+    {
+      "id": "src/screens/LeerlingScherm/LeerlingScherm.tsx",
+      "label": "LeerlingScherm",
+      "routes": [
+        "/leerling-scherm"
+      ],
+      "dataModelId": "491:14"
+    },
+    {
+      "id": "src/screens/LeerlingSchermScreen/LeerlingSchermScreen.tsx",
+      "label": "LeerlingSchermScreen",
+      "routes": [
+        "/leerling-scherm-screen"
+      ],
+      "dataModelId": "582:1440"
+    },
+    {
+      "id": "src/screens/ModuleScherm/ModuleScherm.tsx",
+      "label": "ModuleScherm",
+      "routes": [
+        "/module-scherm"
+      ],
+      "dataModelId": "491:13"
+    },
+    {
+      "id": "src/screens/ModuleSchermModule/ModuleSchermModule.tsx",
+      "label": "ModuleSchermModule",
+      "routes": [
+        "/module-scherm-module"
+      ],
+      "dataModelId": "685:1332"
+    },
+    {
+      "id": "src/screens/UltimateClassroom/UltimateClassroom.tsx",
+      "label": "UltimateClassroom",
+      "routes": [
+        "/ultimate-classroom"
+      ],
+      "dataModelId": "650:1679"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx:159:10-to-src\\screens\\Klassen\\Klassen.tsx",
+      "source": "src\\screens\\Klassen\\Klassen.tsx",
+      "target": "src\\screens\\Klassen\\Klassen.tsx",
+      "data": {
+        "viaRoute": "/klassen",
+        "trigger": {
+          "element": "<Link to=\"/klassen\" aria-label=\"Ga naar Atlas dashboard\">\r\n            <img\r\n              className=\"absolute top-0 left-2 block h-[163px] w-[164px] aspect-[1.01] object-cover\"\r\n              alt=\"OJT logo\"\r\n              src=\"/img/ojt-logo-2.png\"\r\n            />\r\n          </Link>",
+          "line": 159,
+          "endLine": 165,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx:167:12-to-src\\screens\\Klassen\\Klassen.tsx",
+      "source": "src\\screens\\Klassen\\Klassen.tsx",
+      "target": "src\\screens\\Klassen\\Klassen.tsx",
+      "data": {
+        "viaRoute": "/klassen",
+        "trigger": {
+          "element": "<Link\r\n              className=\"flex h-[43.23px] w-44 items-center justify-center text-center [font-family:'Poppins',Helvetica] text-xl font-bold leading-[18.0px] tracking-[-0.44px] text-black\"\r\n              to=\"/klassen\"\r\n            >\r\n              Atlas dashboard\r\n            </Link>",
+          "line": 167,
+          "endLine": 172,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\LeerlingScherm\\LeerlingScherm.tsx:23:8-to-src\\screens\\BasisLayout\\BasisLayout.tsx",
+      "source": "src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "target": "src\\screens\\BasisLayout\\BasisLayout.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link\r\n          to=\"/\"\r\n          className=\"absolute left-[35px] top-[43px] flex h-8 w-[73px] items-center [font-family:'Poppins',Helvetica] text-xl font-bold leading-[30px] tracking-[-0.44px] text-black whitespace-nowrap\"\r\n          aria-label=\"Terug\"\r\n        >\r\n          &lt; Terug\r\n        </Link>",
+          "line": 23,
+          "endLine": 29,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\LeerlingScherm\\LeerlingScherm.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx:258:6-to-src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "source": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx",
+      "target": "src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "data": {
+        "viaRoute": "/leerling-scherm",
+        "trigger": {
+          "element": "<Link\r\n        className=\"absolute top-[173px] left-[316px] w-[73px] h-8 flex items-center [font-family:'Poppins',Helvetica] font-bold text-black text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap\"\r\n        to=\"/leerling-scherm\"\r\n      >\r\n        &lt; Terug\r\n      </Link>",
+          "line": 258,
+          "endLine": 263,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx:388:12-to-src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "source": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx",
+      "target": "src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "data": {
+        "viaRoute": "/leerling-scherm",
+        "trigger": {
+          "element": "<Link\r\n              to=\"/leerling-scherm\"\r\n              className=\"ml-[132px] w-[43px] h-3 relative mt-[11px] block\"\r\n            >\r\n              <span className=\"absolute top-0 left-0 h-3 flex items-center [font-family:'Poppins',Helvetica] font-bold text-[#74a2d1] text-[8px] tracking-[-0.18px] leading-3 whitespace-nowrap\">\r\n                Lees meer\r\n              </span>\r\n              <img\r\n                className=\"absolute top-[11px] left-0 w-10 h-px object-cover\"\r\n                alt=\"Line\"\r\n                src=\"/img/line-3-1.svg\"\r\n              />\r\n            </Link>",
+          "line": 388,
+          "endLine": 400,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx:470:16-to-src\\screens\\BasisLayout\\BasisLayout.tsx",
+      "source": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx",
+      "target": "src\\screens\\BasisLayout\\BasisLayout.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<Link\r\n                  className=\"flex items-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]\"\r\n                  to=\"/\"\r\n                >\r\n                  <div className=\"relative w-6 h-6 aspect-[1]\">\r\n                    <img\r\n                      className=\"absolute w-[83.33%] h-[85.42%] top-[14.58%] left-[16.67%]\"\r\n                      alt=\"Vector\"\r\n                      src=\"/img/vector-187.svg\"\r\n                    />\r\n                  </div>\r\n                  <div className=\"relative flex items-center w-[137px] h-4 mr-[-4.00px] [font-family:'Poppins',Helvetica] font-normal text-black text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap\">\r\n                    Main menu\r\n                  </div>\r\n                </Link>",
+          "line": 470,
+          "endLine": 484,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx:502:16-to-src\\screens\\ModuleScherm\\ModuleScherm.tsx",
+      "source": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx",
+      "target": "src\\screens\\ModuleScherm\\ModuleScherm.tsx",
+      "data": {
+        "viaRoute": "/module-scherm",
+        "trigger": {
+          "element": "<Link\r\n                  className=\"flex items-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]\"\r\n                  to=\"/module-scherm\"\r\n                >\r\n                  <div className=\"relative w-6 h-6 aspect-[1]\">\r\n                    <img\r\n                      className=\"absolute w-[94.17%] h-[94.48%] top-[5.52%] left-[5.83%]\"\r\n                      alt=\"Vector\"\r\n                      src=\"/img/vector-189.svg\"\r\n                    />\r\n                  </div>\r\n                  <div className=\"flex items-center w-[137px] h-4 mr-[-4.00px] font-normal text-black relative [font-family:'Poppins',Helvetica] text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap\">\r\n                    Modules\r\n                  </div>\r\n                </Link>",
+          "line": 502,
+          "endLine": 516,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx:517:16-to-src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "source": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx",
+      "target": "src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "data": {
+        "viaRoute": "/leerling-scherm",
+        "trigger": {
+          "element": "<Link\r\n                  className=\"flex items-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]\"\r\n                  to=\"/leerling-scherm\"\r\n                  aria-current=\"page\"\r\n                >\r\n                  <div className=\"relative w-6 h-6 aspect-[1]\">\r\n                    <img\r\n                      className=\"absolute w-[95.83%] h-[79.17%] top-[20.83%] left-[4.17%]\"\r\n                      alt=\"Vector\"\r\n                      src=\"/img/vector-190.svg\"\r\n                    />\r\n                  </div>\r\n                  <div className=\"relative flex items-center w-[137px] h-4 mr-[-4.00px] [font-family:'Poppins',Helvetica] font-normal text-black text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap\">\r\n                    Leerlingen\r\n                  </div>\r\n                </Link>",
+          "line": 517,
+          "endLine": 532,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx:159:10-to-src\\screens\\Klassen\\Klassen.tsx",
+      "source": "src\\screens\\Klassen\\Klassen.tsx",
+      "target": "src\\screens\\Klassen\\Klassen.tsx",
+      "data": {
+        "viaRoute": "/klassen",
+        "trigger": {
+          "element": "<Link to=\"/klassen\" aria-label=\"Ga naar Atlas dashboard\">\r\n            <img\r\n              className=\"absolute top-0 left-2 block h-[163px] w-[164px] aspect-[1.01] object-cover\"\r\n              alt=\"OJT logo\"\r\n              src=\"/img/ojt-logo-2.png\"\r\n            />\r\n          </Link>",
+          "line": 159,
+          "endLine": 165,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx:167:12-to-src\\screens\\Klassen\\Klassen.tsx",
+      "source": "src\\screens\\Klassen\\Klassen.tsx",
+      "target": "src\\screens\\Klassen\\Klassen.tsx",
+      "data": {
+        "viaRoute": "/klassen",
+        "trigger": {
+          "element": "<Link\r\n              className=\"flex h-[43.23px] w-44 items-center justify-center text-center [font-family:'Poppins',Helvetica] text-xl font-bold leading-[18.0px] tracking-[-0.44px] text-black\"\r\n              to=\"/klassen\"\r\n            >\r\n              Atlas dashboard\r\n            </Link>",
+          "line": 167,
+          "endLine": 172,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ModuleSchermModule\\ModuleSchermModule.tsx:31:8-to-src\\screens\\ModuleScherm\\ModuleScherm.tsx",
+      "source": "src\\screens\\ModuleSchermModule\\ModuleSchermModule.tsx",
+      "target": "src\\screens\\ModuleScherm\\ModuleScherm.tsx",
+      "data": {
+        "viaRoute": "/module-scherm",
+        "trigger": {
+          "element": "<Link\r\n          className=\"absolute left-[35px] top-[43px] flex h-8 w-[73px] items-center [font-family:'Poppins',Helvetica] text-xl font-bold leading-[30px] tracking-[-0.44px] text-black whitespace-nowrap\"\r\n          to=\"/module-scherm\"\r\n          aria-label=\"Ga terug naar module overzicht\"\r\n        >\r\n          &lt; Terug\r\n        </Link>",
+          "line": 31,
+          "endLine": 37,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\ModuleSchermModule\\ModuleSchermModule.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\UltimateClassroom\\UltimateClassroom.tsx:689:16-to-src\\screens\\ModuleScherm\\ModuleScherm.tsx",
+      "source": "src\\screens\\UltimateClassroom\\UltimateClassroom.tsx",
+      "target": "src\\screens\\ModuleScherm\\ModuleScherm.tsx",
+      "data": {
+        "viaRoute": "/module-scherm",
+        "trigger": {
+          "element": "<Link\r\n                  className=\"flex items-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]\"\r\n                  to=\"/module-scherm\"\r\n                >\r\n                  <div className=\"relative w-6 h-6 aspect-[1]\">\r\n                    <img\r\n                      className=\"absolute w-[94.17%] h-[94.48%] top-[5.52%] left-[5.83%]\"\r\n                      alt=\"Modules icon\"\r\n                      src=\"/img/vector-189.svg\"\r\n                    />\r\n                  </div>\r\n                  <div className=\"relative flex items-center w-[137px] h-4 mr-[-4.00px] [font-family:'Poppins',Helvetica] font-normal text-black text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap\">\r\n                    Modules\r\n                  </div>\r\n                </Link>",
+          "line": 689,
+          "endLine": 703,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\UltimateClassroom\\UltimateClassroom.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\UltimateClassroom\\UltimateClassroom.tsx:704:16-to-src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "source": "src\\screens\\UltimateClassroom\\UltimateClassroom.tsx",
+      "target": "src\\screens\\LeerlingScherm\\LeerlingScherm.tsx",
+      "data": {
+        "viaRoute": "/leerling-scherm",
+        "trigger": {
+          "element": "<Link\r\n                  className=\"flex items-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]\"\r\n                  to=\"/leerling-scherm\"\r\n                >\r\n                  <div className=\"relative w-6 h-6 aspect-[1]\">\r\n                    <img\r\n                      className=\"absolute w-[95.83%] h-[79.17%] top-[20.83%] left-[4.17%]\"\r\n                      alt=\"Leerlingen icon\"\r\n                      src=\"/img/vector-190.svg\"\r\n                    />\r\n                  </div>\r\n                  <div className=\"relative flex items-center w-[137px] h-4 mr-[-4.00px] [font-family:'Poppins',Helvetica] font-normal text-black text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap\">\r\n                    Leerlingen\r\n                  </div>\r\n                </Link>",
+          "line": 704,
+          "endLine": 718,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\UltimateClassroom\\UltimateClassroom.tsx"
+        }
+      }
+    }
+  ]
 }
