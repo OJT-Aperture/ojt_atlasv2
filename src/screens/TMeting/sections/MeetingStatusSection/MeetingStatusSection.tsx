@@ -1,14 +1,14 @@
 const meetingStatuses = [
-  { label: "T-0", left: "left-[15px]" },
-  { label: "T-1", left: "left-[379px]" },
-  { label: "T-2", left: "left-[564px]" },
+  { label: "T-0", left: "left-[0px]" },
+  { label: "T-1", left: "left-[365px]" },
+  { label: "T-2", left: "left-[730px]" },
 ];
 
 export const MeetingStatusSection = (): JSX.Element => {
   return (
     <section
       aria-label="Meeting status timeline"
-      className="absolute top-[315px] left-[287px] w-[793px] h-[197px]"
+      className="absolute top-[86px] left-[40px] w-[793px] h-[197px]"
     >
       <div
         aria-hidden="true"
