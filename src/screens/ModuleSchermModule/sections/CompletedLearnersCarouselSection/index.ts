@@ -1,0 +1,1 @@
+export { CompletedLearnersCarouselSection } from "./CompletedLearnersCarouselSection";
