@@ -71,7 +71,7 @@
       "routes": [
         "/module-scherm"
       ],
-      "dataModelId": "491:13"
+      "dataModelId": "1521:7045"
     },
     {
       "id": "src/screens/ModuleSchermModule/ModuleSchermModule.tsx",
@@ -88,6 +88,14 @@
         "/ultimate-classroom"
       ],
       "dataModelId": "650:1679"
+    },
+    {
+      "id": "src/screens/TMeting/TMeting.tsx",
+      "label": "TMeting",
+      "routes": [
+        "/tmeting"
+      ],
+      "dataModelId": "1673:2054"
     }
   ],
   "edges": [
@@ -216,38 +224,6 @@
           "column": 16,
           "endColumn": 23,
           "sourceFile": "src\\screens\\LeerlingSchermScreen\\LeerlingSchermScreen.tsx"
-        }
-      }
-    },
-    {
-      "id": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx:159:10-to-src\\screens\\Klassen\\Klassen.tsx",
-      "source": "src\\screens\\Klassen\\Klassen.tsx",
-      "target": "src\\screens\\Klassen\\Klassen.tsx",
-      "data": {
-        "viaRoute": "/klassen",
-        "trigger": {
-          "element": "<Link to=\"/klassen\" aria-label=\"Ga naar Atlas dashboard\">\r\n            <img\r\n              className=\"absolute top-0 left-2 block h-[163px] w-[164px] aspect-[1.01] object-cover\"\r\n              alt=\"OJT logo\"\r\n              src=\"/img/ojt-logo-2.png\"\r\n            />\r\n          </Link>",
-          "line": 159,
-          "endLine": 165,
-          "column": 10,
-          "endColumn": 17,
-          "sourceFile": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx"
-        }
-      }
-    },
-    {
-      "id": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx:167:12-to-src\\screens\\Klassen\\Klassen.tsx",
-      "source": "src\\screens\\Klassen\\Klassen.tsx",
-      "target": "src\\screens\\Klassen\\Klassen.tsx",
-      "data": {
-        "viaRoute": "/klassen",
-        "trigger": {
-          "element": "<Link\r\n              className=\"flex h-[43.23px] w-44 items-center justify-center text-center [font-family:'Poppins',Helvetica] text-xl font-bold leading-[18.0px] tracking-[-0.44px] text-black\"\r\n              to=\"/klassen\"\r\n            >\r\n              Atlas dashboard\r\n            </Link>",
-          "line": 167,
-          "endLine": 172,
-          "column": 12,
-          "endColumn": 19,
-          "sourceFile": "src\\screens\\Klassen\\sections\\SidebarNavigationSection\\SidebarNavigationSection.tsx"
         }
       }
     },
