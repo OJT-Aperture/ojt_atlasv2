@@ -14,7 +14,7 @@ export const ModuleScherm = (): JSX.Element => {
       <SideNavigationSection />
       <section
         aria-label="Module overzicht"
-        className="absolute top-[216px] left-[247px] w-[873px] h-[663px]"
+        className="absolute top-[216px] left-[247px] w-[873px] h-[663px] flex flex-col items-center justify-center gap-[64px]"
       >
         <div className="absolute inset-0 bg-white rounded-[15px] shadow-[0px_4px_4px_#00000040]" />
         <AvailableModulesSection />
@@ -26,7 +26,7 @@ export const ModuleScherm = (): JSX.Element => {
       <button
         type="button"
         aria-label="Meer informatie"
-        className="absolute w-[11.94%] h-[4.10%] top-[74.51%] left-[82.85%] rounded-[10px] overflow-hidden bg-[#74a2d1]"
+        className="absolute w-[11.94%] h-[4.10%] top-[74.51%] left-[1280px] -translate-x-1/2 rounded-[10px] overflow-hidden bg-[#74a2d1]"
       >
         <span className="absolute inset-0 rounded-[10px]" />
         <span className="absolute w-[72.48%] h-[50.00%] top-[26.19%] left-[13.18%] [font-family:'Poppins',Helvetica] font-bold text-white text-sm text-center tracking-[-0.31px] leading-[normal]">

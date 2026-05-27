@@ -32,13 +32,6 @@ export const ModuleInfoSidebarSection = (): JSX.Element => {
             <li key={`${item}-${index}`}>{item}</li>
           ))}
         </ul>
-        <button
-          type="button"
-          aria-label="Meer informatie"
-          className="mt-auto ml-[17px] flex h-[30px] w-[121px] items-center justify-center rounded-[8px] bg-[#76a9dc] [font-family:'Poppins',Helvetica] text-[11px] font-semibold leading-normal text-white shadow-[0px_2px_4px_rgba(0,0,0,0.18)]"
-        >
-          Meer informatie
-        </button>
       </div>
     </aside>
   );

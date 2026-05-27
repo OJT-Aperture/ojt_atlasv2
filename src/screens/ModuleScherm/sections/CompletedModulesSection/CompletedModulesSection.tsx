@@ -26,16 +26,16 @@ export const CompletedModulesSection = (): JSX.Element => {
   return (
     <section
       aria-labelledby="afgeronde-modules-heading"
-      className="flex flex-col w-[799px] items-start gap-5 absolute top-[546px] left-[282px]"
+      className="flex flex-col w-[799px] items-center gap-5"
     >
       <h2
         id="afgeronde-modules-heading"
-        className="relative flex items-center self-stretch mt-[-1.00px] [font-family:'Poppins',Helvetica] font-bold text-black text-2xl tracking-[-0.53px] leading-9"
+        className="relative flex items-center justify-center self-stretch mt-[-1.00px] [font-family:'Poppins',Helvetica] font-bold text-black text-2xl tracking-[-0.53px] leading-9"
       >
         Afgeronde modules
       </h2>
       <div
-        className="flex items-center gap-5 relative self-stretch w-full flex-[0_0_auto]"
+        className="flex items-center justify-center gap-5 relative self-stretch w-full flex-[0_0_auto]"
         role="list"
         aria-label="Lijst met afgeronde modules"
       >
