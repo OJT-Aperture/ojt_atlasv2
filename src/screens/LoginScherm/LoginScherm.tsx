@@ -170,7 +170,7 @@ export const LoginScherm = (): JSX.Element => {
           Dashboard
         </h1>
         <div className="flex items-center justify-center ml-[355px] h-6 w-[586px] self-center mt-[201px] [font-family:'Poppins',Helvetica] font-medium text-[#434343] text-base text-center tracking-[0.32px] leading-6">
-          Made en powered by
+          Made & powered by
         </div>
         <img
           className="ml-[630px] w-11 h-8 mt-[5px] aspect-[1.4]"

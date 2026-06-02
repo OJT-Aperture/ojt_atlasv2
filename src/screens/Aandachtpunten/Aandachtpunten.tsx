@@ -1,8 +1,9 @@
 import { AttentionPointsHeaderSection } from "./sections/AttentionPointsHeaderSection";
 import { AttentionPointsMetricsSection } from "./sections/AttentionPointsMetricsSection";
 import { AttentionPointsTableSection } from "./sections/AttentionPointsTableSection";
-import { HeaderSection } from "./sections/HeaderSection";
-import { SideNavSection } from "./sections/SideNavSection";
+import { Footer } from "../../Components/Footer";
+import { Linkernavigatie } from "../../Components/Linkernavigatie";
+import { Topbar } from "../../Components/Topbar";
 
 const rowIconPositions = [675, 740, 804, 869, 938];
 
@@ -13,7 +14,7 @@ export const Aandachtpunten = (): JSX.Element => {
       data-model-id="630:1161"
       aria-label="Aandachtpunten pagina"
     >
-      <HeaderSection />
+      <Topbar />
       <AttentionPointsHeaderSection />
       <AttentionPointsMetricsSection />
       <AttentionPointsTableSection />
@@ -57,19 +58,8 @@ export const Aandachtpunten = (): JSX.Element => {
           />
         </div>
       </div>
-      <footer className="absolute top-[1123px] left-0 w-[1440px] h-[62px] flex bg-[#74a2d1] rounded-sm overflow-hidden shadow-[0px_-6px_13px_#00000040]">
-        <div className="mt-1.5 ml-[766px] w-[161px] flex gap-[13px] items-start">
-          <div className="flex items-center mt-4 w-[75px] h-5 [font-family:'Poppins',Helvetica] font-bold text-black text-[13px] tracking-[-0.29px] leading-[19.5px] whitespace-nowrap">
-            Powered by
-          </div>
-          <img
-            className="w-[71px] h-[51px] aspect-[1.4]"
-            alt="Logo design labs"
-            src="/img/logo-design-labs7-1-8.png"
-          />
-        </div>
-      </footer>
-      <SideNavSection />
+      <Footer />
+      <Linkernavigatie />
     </main>
   );
 };

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { Footer } from "../../Components/Footer";
+import { Linkernavigatie } from "../../Components/Linkernavigatie";
 import { PageHeaderSection } from "./sections/PageHeaderSection/PageHeaderSection";
-import { SidebarNavigationSection } from "./sections/SidebarNavigationSection";
+import { Topbar } from "../../Components/Topbar";
 import { StudentListSection } from "./sections/StudentListSection/StudentListSection";
 
 const profileLinkPositions = [
@@ -14,8 +16,8 @@ export const LeerlingScherm = (): JSX.Element => {
       data-model-id="491:14"
       aria-label="Leerlingen overzicht"
     >
-      <PageHeaderSection />
-      <SidebarNavigationSection />
+      <Topbar />
+      <Linkernavigatie />
       <header className="absolute top-[130px] left-[281px] w-[1159px]">
         <h1 className="flex h-[73px] items-center justify-center [font-family:'Poppins',Helvetica] text-[40px] font-bold leading-[60px] tracking-[-0.88px] text-black">
           Leerlingen
@@ -67,18 +69,8 @@ export const LeerlingScherm = (): JSX.Element => {
           <div className="absolute left-[19.05%] top-[13px] h-3.5 w-[9.24%] aspect-[1] bg-[url(/img/vector-186.svg)] bg-[100%_100%]" />
         </div>
       </div>
-      <footer className="absolute left-0 top-[1081px] flex h-[62px] w-[1440px] overflow-hidden rounded-sm bg-[#74a2d1] shadow-[0px_-6px_13px_#00000040]">
-        <div className="ml-[766px] mt-1.5 flex w-[161px] gap-[13px]">
-          <div className="mt-4 flex h-5 w-[75px] items-center [font-family:'Poppins',Helvetica] text-[13px] font-bold leading-[19.5px] tracking-[-0.29px] text-black whitespace-nowrap">
-            Powered by
-          </div>
-          <img
-            className="h-[51px] w-[71px] aspect-[1.4]"
-            alt="Logo design labs7"
-            src="/img/logo-design-labs7-1-8.png"
-          />
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 };
+

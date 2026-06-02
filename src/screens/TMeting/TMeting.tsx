@@ -1,8 +1,9 @@
 import { DashboardActionTilesSection } from "./sections/DashboardActionTilesSection";
 import { LearnerCarouselSection } from "./sections/LearnerCarouselSection";
 import { MeetingStatusSection } from "./sections/MeetingStatusSection";
-import { SidebarNavigationSection } from "./sections/SidebarNavigationSection";
-import { TopNavigationBarSection } from "./sections/TopNavigationBarSection";
+import { Footer } from "../../Components/Footer";
+import { Linkernavigatie } from "../../Components/Linkernavigatie";
+import { Topbar } from "../../Components/Topbar";
 
 const agendaItems = [
   {
@@ -28,23 +29,30 @@ export const TMeting = (): JSX.Element => {
       className="bg-[#f6f7f8] overflow-hidden w-full min-w-[1440px] h-[1562px] relative"
       data-model-id="1673:2054"
     >
-      <TopNavigationBarSection />
-      <SidebarNavigationSection />
+      <Topbar />
+      <Linkernavigatie />
+      <header className="absolute top-[118px] left-[281px] w-[1159px]" aria-label="T-meting header">
+        <a
+          href="#"
+          className="absolute top-0 left-0 w-[73px] h-8 flex items-center [font-family:'Poppins',Helvetica] font-bold text-black text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap"
+          aria-label="Terug"
+        >
+          &lt; Terug
+        </a>
+        <h1 className="absolute top-[20px] left-0 w-full h-[73px] flex items-center justify-center [font-family:'Poppins',Helvetica] font-bold text-black text-[40px] text-center tracking-[-0.88px] leading-[60px]">
+          T-Meting: klas 1B
+        </h1>
+        <div className="absolute top-[93px] left-0 w-[1114px] h-0.5 bg-[#686868]" aria-hidden="true" />
+      </header>
       <section
-        aria-labelledby="t-meting-title"
-        className="absolute top-[216px] left-[247px] w-[873px] h-[451px]"
+        aria-label="T-meting status"
+        className="absolute top-[260px] left-[247px] w-[873px] h-[451px]"
       >
         <div
           className="absolute inset-0 bg-center bg-no-repeat bg-contain rounded-md"
           style={{ backgroundImage: "url(https://c.animaapp.com/tNip9Jvr/img/rectangle-269.png)" }}
           aria-hidden="true"
         />
-        <h1
-          id="t-meting-title"
-          className="absolute top-[22px] left-[41px] w-[226px] h-9 flex items-center [font-family:'Poppins',Helvetica] font-bold text-black text-2xl tracking-[-0.53px] leading-9"
-        >
-          T-Meting: klas 1B
-        </h1>
         <MeetingStatusSection />
         <div className="absolute top-[337px] left-[40px] w-[467px] h-[30px] flex items-center [font-family:'Poppins',Helvetica] font-bold text-black text-xl tracking-[-0.44px] leading-[30px]">
           Notificaties
@@ -77,7 +85,7 @@ export const TMeting = (): JSX.Element => {
       <DashboardActionTilesSection />
       <aside
         aria-label="Agenda"
-        className="absolute top-[222px] left-[1160px] w-60 h-[727px]"
+        className="absolute top-[266px] left-[1160px] w-60 h-[727px]"
       >
         <div className="absolute top-0 left-0 w-60 h-[727px] flex shadow-[0px_4px_4px_#00000040]">
           <img
@@ -167,18 +175,7 @@ export const TMeting = (): JSX.Element => {
         </div>
       </button>
       
-      <footer className="absolute top-[1500px] left-0.5 w-[1440px] h-[62px] flex bg-[#74a2d1] rounded-sm overflow-hidden shadow-[0px_-6px_13px_#00000040]">
-        <div className="mt-1.5 w-[161px] ml-[766px] flex gap-[13px]">
-          <div className="flex items-center mt-4 w-[75px] h-5 [font-family:'Poppins',Helvetica] font-bold text-black text-[13px] tracking-[-0.29px] leading-[19.5px] whitespace-nowrap">
-            Powered by
-          </div>
-          <img
-            className="w-[71px] h-[51px] aspect-[1.4]"
-            alt="Logo design"
-            src="https://c.animaapp.com/tNip9Jvr/img/logo-design-labs7-1@2x.png"
-          />
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 };

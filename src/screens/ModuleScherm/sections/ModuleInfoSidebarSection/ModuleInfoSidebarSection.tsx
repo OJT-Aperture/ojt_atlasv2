@@ -10,7 +10,7 @@ export const ModuleInfoSidebarSection = (): JSX.Element => {
   return (
     <aside
       aria-labelledby="module-info-sidebar-title"
-      className="absolute top-[216px] left-[1161px] h-[663px] w-[237px]"
+      className="absolute top-[260px] left-[1161px] h-[663px] w-[237px]"
     >
       <div className="absolute top-0 left-0 flex h-[663px] w-[237px]">
         <img

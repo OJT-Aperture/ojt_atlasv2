@@ -1,7 +1,10 @@
 import { ClassSelectionSection } from "./sections/ClassSelectionSection";
+import { Footer } from "../../Components/Footer";
 import { FooterSection } from "./sections/FooterSection";
+import { Linkernavigatie } from "../../Components/Linkernavigatie";
 import { MainContentSection } from "./sections/MainContentSection";
 import { SearchBarSection } from "./sections/SearchBarSection";
+import { Topbar } from "../../Components/Topbar";
 import { UserGreetingSection } from "./sections/UserGreetingSection/UserGreetingSection";
 
 export const KlassenInformatie = (): JSX.Element => {
@@ -15,6 +18,8 @@ export const KlassenInformatie = (): JSX.Element => {
       className="relative w-[1440px] h-[1567px] bg-white"
       data-model-id="825:1685"
     >
+      <Topbar />
+      <Linkernavigatie />
       <SearchBarSection />
       <ClassSelectionSection />
       <button
@@ -58,18 +63,7 @@ export const KlassenInformatie = (): JSX.Element => {
         </span>
       </section>
       <UserGreetingSection />
-      <footer className="absolute top-[1505px] left-0 w-[1440px] h-[62px] flex bg-[#74a2d1] rounded-sm overflow-hidden shadow-[0px_-6px_13px_#00000040]">
-        <div className="mt-1.5 w-[161px] ml-[766px] flex gap-[13px] items-start">
-          <div className="flex items-center mt-4 w-[75px] h-5 [font-family:'Poppins',Helvetica] font-bold text-black text-[13px] tracking-[-0.29px] leading-[19.5px] whitespace-nowrap">
-            Powered by
-          </div>
-          <img
-            className="w-[71px] h-[51px] aspect-[1.4]"
-            alt="Logo design labs"
-            src="/img/logo-design-labs7-1-8.png"
-          />
-        </div>
-      </footer>
+      <Footer />
       <nav
         className="absolute top-[31px] left-[1141px] w-[154px] h-28 flex"
         aria-label="Modules navigatie"

@@ -1,16 +1,11 @@
 import { ActiveLearnersCarouselSection } from "./sections/ActiveLearnersCarouselSection";
 import { AgendaScheduleSection } from "./sections/AgendaScheduleSection";
 import { CompletedLearnersCarouselSection } from "./sections/CompletedLearnersCarouselSection";
-import { DashboardSidebarNavigationSection } from "./sections/DashboardSidebarNavigationSection";
+import { Footer } from "../../Components/Footer";
+import { Linkernavigatie } from "../../Components/Linkernavigatie";
 import { ModuleOverviewSection } from "./sections/ModuleOverviewSection";
 import { ModuleProgressSection } from "./sections/ModuleProgressSection";
-import { TopUtilityBarSection } from "./sections/TopUtilityBarSection";
-
-const footerContent = {
-  poweredByLabel: "Powered by",
-  logoAlt: "Logo design labs",
-  logoSrc: "https://c.animaapp.com/aWHY8P00/img/logo-design-labs7-1@2x.png",
-};
+import { Topbar } from "../../Components/Topbar";
 
 export const ModuleSchermModule = (): JSX.Element => {
   return (
@@ -19,16 +14,29 @@ export const ModuleSchermModule = (): JSX.Element => {
       data-model-id="1686:11099"
       aria-label="Module dashboard"
     >
-      <DashboardSidebarNavigationSection />
-      <TopUtilityBarSection />
+      <Linkernavigatie />
+      <Topbar />
+      <header className="absolute top-[118px] left-[281px] w-[1159px]" aria-label="Module D header">
+        <a
+          href="#"
+          className="absolute top-0 left-0 w-[73px] h-8 flex items-center [font-family:'Poppins',Helvetica] font-bold text-black text-xl tracking-[-0.44px] leading-[30px] whitespace-nowrap"
+          aria-label="Terug"
+        >
+          &lt; Terug
+        </a>
+        <h1 className="absolute top-[20px] left-0 w-full h-[73px] flex items-center justify-center [font-family:'Poppins',Helvetica] font-bold text-black text-[40px] text-center tracking-[-0.88px] leading-[60px]">
+          Module D
+        </h1>
+        <div className="absolute top-[93px] left-0 w-[1114px] h-0.5 bg-[#686868]" aria-hidden="true" />
+      </header>
       <section
-        className="absolute left-[243px] top-[216px] h-[308px] w-[1162px]"
+        className="absolute left-[243px] top-[260px] h-[308px] w-[1162px]"
         aria-label="Module overview"
       >
         <ModuleOverviewSection />
       </section>
       <section
-        className="absolute left-[247px] top-[560px] h-[373px] w-[873px]"
+        className="absolute left-[247px] top-[604px] h-[373px] w-[873px]"
         aria-labelledby="module-status-heading"
       >
         <div className="absolute left-0 top-0 flex h-[373px] w-[873px]">
@@ -100,18 +108,7 @@ export const ModuleSchermModule = (): JSX.Element => {
       >
         <CompletedLearnersCarouselSection />
       </section>
-      <footer className="absolute left-0 top-[1958px] flex h-[62px] w-[1440px] overflow-hidden rounded-sm bg-[#74a2d1] shadow-[0px_-6px_13px_#00000040]">
-        <div className="ml-[766px] mt-1.5 flex w-[161px] gap-[13px]">
-          <div className="mt-4 flex h-5 w-[75px] items-center whitespace-nowrap [font-family:'Poppins',Helvetica] text-[13px] font-bold leading-[19.5px] tracking-[-0.29px] text-black">
-            {footerContent.poweredByLabel}
-          </div>
-          <img
-            className="h-[51px] w-[71px] aspect-[1.4]"
-            alt={footerContent.logoAlt}
-            src={footerContent.logoSrc}
-          />
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 };

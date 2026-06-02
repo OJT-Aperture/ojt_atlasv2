@@ -1,7 +1,8 @@
 import { ContactUsSection } from "./sections/ContactUsSection";
 import { FaqSection } from "./sections/FaqSection";
-import { SidebarNavigationSection } from "./sections/SidebarNavigationSection";
-import { TopNavigationSection } from "./sections/TopNavigationSection";
+import { Footer } from "../../Components/Footer";
+import { Linkernavigatie } from "../../Components/Linkernavigatie";
+import { Topbar } from "../../Components/Topbar";
 
 const contactDetails = [
   {
@@ -28,7 +29,7 @@ export const HelpEnSupport = (): JSX.Element => {
       data-model-id="491:15"
       aria-label="Help en support"
     >
-      <TopNavigationSection />
+      <Topbar />
       <header className="contents">
         <a
           href="#"
@@ -105,21 +106,8 @@ export const HelpEnSupport = (): JSX.Element => {
           />
         </div>
       </nav>
-      <footer className="absolute top-[1789px] left-0 w-[1440px] h-[62px] flex bg-[#74a2d1] rounded-sm overflow-hidden shadow-[0px_-6px_13px_#00000040]">
-        <div className="mt-1.5 w-[161px] ml-[766px] flex gap-[13px]">
-          <div className="flex items-center mt-4 w-[75px] h-5 [font-family:'Poppins',Helvetica] font-bold text-black text-[13px] tracking-[-0.29px] leading-[19.5px] whitespace-nowrap">
-            Powered by
-          </div>
-          <img
-            className="w-[71px] h-[51px] aspect-[1.4]"
-            alt="Logo design"
-            src="/img/logo-design-labs7-1-8.png"
-          />
-        </div>
-      </footer>
-      <aside aria-label="Zijbalk navigatie">
-        <SidebarNavigationSection />
-      </aside>
+      <Footer />
+      <Linkernavigatie />
     </main>
   );
 };
