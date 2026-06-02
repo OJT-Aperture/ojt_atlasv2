@@ -12,7 +12,7 @@ const profileLinkPositions = [
 export const LeerlingScherm = (): JSX.Element => {
   return (
     <main
-      className="relative w-[1440px] h-[1143px] bg-white"
+      className="relative w-[1440px] min-h-[1143px] bg-white flex flex-col"
       data-model-id="491:14"
       aria-label="Leerlingen overzicht"
     >
@@ -69,6 +69,7 @@ export const LeerlingScherm = (): JSX.Element => {
           <div className="absolute left-[19.05%] top-[13px] h-3.5 w-[9.24%] aspect-[1] bg-[url(/img/vector-186.svg)] bg-[100%_100%]" />
         </div>
       </div>
+      <div className="h-[1200px]" />
       <Footer />
     </main>
   );

@@ -15,7 +15,7 @@ export const KlassenInformatie = (): JSX.Element => {
 
   return (
     <main
-      className="relative w-[1440px] h-[1567px] bg-white"
+      className="relative w-[1440px] min-h-[1567px] bg-white flex flex-col"
       data-model-id="825:1685"
     >
       <Topbar />
@@ -63,7 +63,6 @@ export const KlassenInformatie = (): JSX.Element => {
         </span>
       </section>
       <UserGreetingSection />
-      <Footer />
       <nav
         className="absolute top-[31px] left-[1141px] w-[154px] h-28 flex"
         aria-label="Modules navigatie"
@@ -76,6 +75,8 @@ export const KlassenInformatie = (): JSX.Element => {
         </div>
       </nav>
       <MainContentSection />
+      <div className="h-[1600px]" />
+      <Footer />
     </main>
   );
 };

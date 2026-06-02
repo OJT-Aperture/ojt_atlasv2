@@ -191,7 +191,7 @@ const quickCards = [
 export const LeerlingSchermScreen = (): JSX.Element => {
   return (
     <main
-      className="relative w-[1440px] h-[1312px] bg-white overflow-hidden"
+      className="relative w-[1440px] min-h-[1312px] bg-white flex flex-col"
       data-model-id="582:1440"
     >
       <Topbar />
@@ -373,6 +373,7 @@ export const LeerlingSchermScreen = (): JSX.Element => {
           Gegevens invoeren
         </span>
       </button>
+      <div className="h-[1400px]" />
       <Footer />
     </main>
   );

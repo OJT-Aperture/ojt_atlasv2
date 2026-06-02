@@ -1,4 +1,5 @@
 import { FormEvent, useId, useState } from "react";
+import { Footer } from "../../Components/Footer";
 
 const schoolOptions = [
   { value: "", label: "Schoolnaam" },
@@ -19,7 +20,7 @@ export const LoginScherm = (): JSX.Element => {
 
   return (
     <main
-      className="bg-[linear-gradient(118deg,rgba(224,255,219,1)_0%,rgba(224,255,219,1)_18%,rgba(116,162,209,1)_100%)] w-full min-w-[1440px] min-h-[1024px] relative"
+      className="bg-[linear-gradient(118deg,rgba(224,255,219,1)_0%,rgba(224,255,219,1)_18%,rgba(116,162,209,1)_100%)] w-full min-w-[1440px] min-h-[1024px] relative flex flex-col"
       data-model-id="1626:9280"
     >
       <section
@@ -178,6 +179,8 @@ export const LoginScherm = (): JSX.Element => {
           src="https://c.animaapp.com/9GGHZOtO/img/logo-design-labs7-1@2x.png"
         />
       </section>
+      <div className="h-[1100px]" />
+      <Footer />
     </main>
   );
 };

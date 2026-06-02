@@ -10,7 +10,7 @@ import { Topbar } from "../../Components/Topbar";
 export const ModuleSchermModule = (): JSX.Element => {
   return (
     <main
-      className="relative min-h-[2050px] w-full min-w-[1440px] bg-[#f6f7f8]"
+      className="relative min-h-[2050px] w-full min-w-[1440px] bg-[#f6f7f8] flex flex-col"
       data-model-id="1686:11099"
       aria-label="Module dashboard"
     >
@@ -108,6 +108,7 @@ export const ModuleSchermModule = (): JSX.Element => {
       >
         <CompletedLearnersCarouselSection />
       </section>
+      <div className="h-[1700px]" />
       <Footer />
     </main>
   );

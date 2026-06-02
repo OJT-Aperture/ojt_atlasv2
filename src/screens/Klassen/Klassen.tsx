@@ -7,7 +7,7 @@ import { Topbar } from "../../Components/Topbar";
 export const Klassen = (): JSX.Element => {
   return (
     <main
-      className="bg-[#f6f7f8] w-full min-w-[1440px] min-h-[1024px] flex flex-col"
+      className="bg-[#f6f7f8] w-full min-w-[1440px] min-h-screen flex flex-col"
       data-model-id="1645:3682"
     >
       <Linkernavigatie />
@@ -22,6 +22,7 @@ export const Klassen = (): JSX.Element => {
         <ClassCardSection />
         <ClassGridSection />
       </section>
+      <div className="h-[200px]" />
       <Footer />
     </main>
   );

@@ -8,7 +8,7 @@ import { Topbar } from "../../Components/Topbar";
 export const ModuleScherm = (): JSX.Element => {
   return (
     <main
-      className="bg-[#f6f7f8] w-full min-w-[1440px] h-[1024px] relative overflow-hidden"
+      className="bg-[#f6f7f8] w-full min-w-[1440px] min-h-screen relative flex flex-col"
       data-model-id="1521:7045"
     >
       <Topbar />
@@ -47,6 +47,7 @@ export const ModuleScherm = (): JSX.Element => {
           Meer informatie
         </span>
       </button>
+      <div className="h-[950px]" />
       <Footer />
     </main>
   );

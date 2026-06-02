@@ -117,11 +117,12 @@ const settingsItems = [
 export const BasisLayout = (): JSX.Element => {
   return (
     <div
-      className="bg-white w-full min-w-[1440px] min-h-[1380px] relative"
+      className="bg-white w-full min-w-[1440px] min-h-[1380px] relative flex flex-col"
       data-model-id="1573:8565"
     >
       <div className="absolute top-0 left-[206px] w-[1234px] h-[1375px] bg-[#f6f7f8]" />
       <Topbar />
+      <Linkernavigatie />
       <main>
         <section className="absolute top-[113px] left-[248px] w-[1153px] h-[63px]">
           <h1 className="absolute w-[21.42%] h-[85.71%] top-0 left-[40.50%] flex items-center justify-center [font-family:'Poppins',Helvetica] font-bold text-black text-4xl text-center tracking-[-0.79px] leading-[54px] whitespace-nowrap">
@@ -137,8 +138,9 @@ export const BasisLayout = (): JSX.Element => {
           </button>
         </section>
       </main>
-      <Footer />
       <Linkernavigatie />
+      <div className="h-[1400px]" />
+      <Footer />
     </div>
   );
 };

@@ -10,11 +10,12 @@ const rowIconPositions = [675, 740, 804, 869, 938];
 export const Aandachtpunten = (): JSX.Element => {
   return (
     <main
-      className="relative w-[1440px] h-[1185px] bg-white overflow-hidden"
+      className="relative w-[1440px] min-h-[1185px] bg-white flex flex-col"
       data-model-id="630:1161"
       aria-label="Aandachtpunten pagina"
     >
       <Topbar />
+      <Linkernavigatie />
       <AttentionPointsHeaderSection />
       <AttentionPointsMetricsSection />
       <AttentionPointsTableSection />
@@ -58,8 +59,8 @@ export const Aandachtpunten = (): JSX.Element => {
           />
         </div>
       </div>
+      <div className="h-[1200px]" />
       <Footer />
-      <Linkernavigatie />
     </main>
   );
 };

@@ -25,11 +25,12 @@ const contactDetails = [
 export const HelpEnSupport = (): JSX.Element => {
   return (
     <main
-      className="relative w-[1440px] h-[1851px] bg-white"
+      className="relative w-[1440px] min-h-[1851px] bg-white flex flex-col"
       data-model-id="491:15"
       aria-label="Help en support"
     >
       <Topbar />
+      <Linkernavigatie />
       <header className="contents">
         <a
           href="#"
@@ -106,8 +107,8 @@ export const HelpEnSupport = (): JSX.Element => {
           />
         </div>
       </nav>
+      <div className="h-[1900px]" />
       <Footer />
-      <Linkernavigatie />
     </main>
   );
 };

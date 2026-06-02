@@ -26,7 +26,7 @@ const agendaItems = [
 export const TMeting = (): JSX.Element => {
   return (
     <main
-      className="bg-[#f6f7f8] overflow-hidden w-full min-w-[1440px] h-[1562px] relative"
+      className="bg-[#f6f7f8] w-full min-w-[1440px] min-h-[1562px] relative flex flex-col"
       data-model-id="1673:2054"
     >
       <Topbar />
@@ -175,6 +175,7 @@ export const TMeting = (): JSX.Element => {
         </div>
       </button>
       
+      <div className="h-[1200px]" />
       <Footer />
     </main>
   );

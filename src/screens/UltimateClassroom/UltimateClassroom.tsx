@@ -447,7 +447,7 @@ const renderStudentText = (student: StudentLabel) => {
 export const UltimateClassroom = (): JSX.Element => {
   return (
     <main
-      className="relative w-[1440px] h-[1316px] bg-white overflow-hidden"
+      className="relative w-[1440px] min-h-[1316px] bg-white flex flex-col"
       data-model-id="650:1679"
     >
       <Topbar />
@@ -544,6 +544,7 @@ export const UltimateClassroom = (): JSX.Element => {
         );
       })}
 
+      <div className="h-[1000px]" />
       <Footer />
     </main>
   );

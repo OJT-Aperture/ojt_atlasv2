@@ -113,7 +113,7 @@ const settingsItems = [
 export const Linkernavigatie = (): JSX.Element => {
   return (
     <aside
-      className="fixed top-0 left-0 w-[212px] h-[1024px] rounded-[0px_20px_20px_0px] shadow-[0px_4px_4px_#00000040]"
+      className="fixed top-0 left-0 w-[212px] h-[1024px] rounded-[0px_20px_20px_0px] shadow-[0px_4px_4px_#00000040] z-50"
       aria-label="Zijbalk navigatie"
     >
       <div className="absolute top-0 left-0 w-full h-[1024px] bg-[#e0ffdb] rounded-[0px_20px_20px_0px]" />
