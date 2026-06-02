@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 const navigationItems = [
   {
     label: "Klassen",
+    path: "/klassen",
     icon: (
       <div className="relative w-6 h-6 aspect-[1]">
         <div className="relative w-[78.45%] h-[90.18%] top-[9.05%] left-[12.50%] flex">
@@ -11,6 +14,7 @@ const navigationItems = [
   },
   {
     label: "T-meting",
+    path: "/tmeting",
     icon: (
       <div className="relative w-6 h-6 aspect-[1]">
         <img
@@ -23,6 +27,7 @@ const navigationItems = [
   },
   {
     label: "Modules",
+    path: "/module-scherm",
     icon: (
       <div className="relative w-6 h-6 aspect-[1]">
         <img
@@ -111,6 +116,8 @@ const settingsItems = [
 ];
 
 export const Linkernavigatie = (): JSX.Element => {
+  const navigate = useNavigate();
+
   return (
     <aside
       className="fixed top-0 left-0 w-[212px] h-[1024px] rounded-[0px_20px_20px_0px] shadow-[0px_4px_4px_#00000040] z-50"
@@ -140,6 +147,7 @@ export const Linkernavigatie = (): JSX.Element => {
                 <button
                   key={item.label}
                   type="button"
+                  onClick={() => item.path && navigate(item.path)}
                   className={`flex flex-1 max-h-6 relative w-[167px] h-6 items-center gap-2.5 cursor-pointer ${
                     index === 0
                       ? "mt-[-12.0px]"
